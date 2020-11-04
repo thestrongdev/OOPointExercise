@@ -1,0 +1,13 @@
+C:\Users\goods\source\repos\OOPoint\bin\Debug\netcoreapp3.1\OOPoint.exe
+C:\Users\goods\source\repos\OOPoint\bin\Debug\netcoreapp3.1\OOPoint.deps.json
+C:\Users\goods\source\repos\OOPoint\bin\Debug\netcoreapp3.1\OOPoint.runtimeconfig.json
+C:\Users\goods\source\repos\OOPoint\bin\Debug\netcoreapp3.1\OOPoint.runtimeconfig.dev.json
+C:\Users\goods\source\repos\OOPoint\bin\Debug\netcoreapp3.1\OOPoint.dll
+C:\Users\goods\source\repos\OOPoint\bin\Debug\netcoreapp3.1\OOPoint.pdb
+C:\Users\goods\source\repos\OOPoint\obj\Debug\netcoreapp3.1\OOPoint.csprojAssemblyReference.cache
+C:\Users\goods\source\repos\OOPoint\obj\Debug\netcoreapp3.1\OOPoint.AssemblyInfoInputs.cache
+C:\Users\goods\source\repos\OOPoint\obj\Debug\netcoreapp3.1\OOPoint.AssemblyInfo.cs
+C:\Users\goods\source\repos\OOPoint\obj\Debug\netcoreapp3.1\OOPoint.csproj.CoreCompileInputs.cache
+C:\Users\goods\source\repos\OOPoint\obj\Debug\netcoreapp3.1\OOPoint.dll
+C:\Users\goods\source\repos\OOPoint\obj\Debug\netcoreapp3.1\OOPoint.pdb
+C:\Users\goods\source\repos\OOPoint\obj\Debug\netcoreapp3.1\OOPoint.genruntimeconfig.cache
