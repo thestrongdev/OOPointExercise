@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace OOPoint
 {
@@ -17,55 +18,39 @@ namespace OOPoint
             {
                 
                 Point userPoint = new Point();
+                List<double> cooridinates = GetPoints();
 
-                userPoint.x = GetX();
-                userPoint.y = GetY();
+                userPoint.x = cooridinates[0];
+                userPoint.y = cooridinates[1];
                 userPoint.ShowPoint();
          
             } while (keepPlay = ContinuePoint()); ;
         }
 
-        static double GetX()
+        static List<double> GetPoints()
         {
+
             do
             {
+                Console.WriteLine("\nPlease enter numerical cooridinates in the following format: x y";
+                string userPoint = Console.ReadLine();
 
-                Console.WriteLine("\nPlease enter an x cooridinate (must be an number): ");
-                string userX = Console.ReadLine();
+                string[] points = userPoint.Split(" ");
 
-
-                if (double.TryParse(userX, out double x))
+                if (double.TryParse(points[0], out double x) &&
+                double.TryParse(points[1], out double y))
                 {
-                    return x;
+                    List<double> coorid = new List<double>();
+                    coorid.Add(x);
+                    coorid.Add(y);
+                    return coorid;
                 }
                 else
                 {
-                    Console.WriteLine("That is not a valid input. Please try again");
+                    Console.WriteLine("\nInvalid entry. Please try again.");
                 }
-
-
             } while (true);
-         }
 
-        static double GetY()
-        {
-            do
-            {
-
-                Console.WriteLine("\nPlease enter an y cooridinate (must be a number): ");
-                string userY = Console.ReadLine();
-
-                if (double.TryParse(userY, out double y))
-                {
-                    return y;
-                }
-                else
-                {
-                    Console.WriteLine("That is not a valid input. Please try again");
-                }
-
-
-            } while (true);
         }
 
         static bool ContinuePoint()
