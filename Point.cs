@@ -21,6 +21,19 @@ namespace OOPoint
             return Math.Sqrt(distance);
         }
 
+        public Point CalculateMidPoint(Point anotherPoint)
+        {
+            //add both x cooridinates and divide by two
+            //add both y cooridinates and divide by two
+
+            Point midpoint = new Point();
+
+            midpoint.x = (this.x + anotherPoint.x) / 2;
+            midpoint.y = (this.y + anotherPoint.y) / 2;
+
+            return midpoint;
+        }
+
     }
 
  

@@ -23,7 +23,17 @@ namespace OOPoint
                 userPoint.x = cooridinates[0];
                 userPoint.y = cooridinates[1];
                 userPoint.ShowPoint();
-         
+
+                Point anotherPoint = new Point();
+                List<double> otherCoorid = GetPoints();
+
+                anotherPoint.x = otherCoorid[0];
+                anotherPoint.y = otherCoorid[1];
+
+                Point midPoint = userPoint.CalculateMidPoint(anotherPoint);
+
+                Console.WriteLine($"The midpoint between ({userPoint.x}, {userPoint.y}) and ({anotherPoint.x}, {anotherPoint.y}) is ({midPoint.x}, {midPoint.y})");
+
             } while (keepPlay = ContinuePoint()); ;
         }
 
@@ -32,7 +42,7 @@ namespace OOPoint
 
             do
             {
-                Console.WriteLine("\nPlease enter numerical cooridinates in the following format: x y";
+                Console.WriteLine("\nPlease enter numerical cooridinates in the following format: x y");
                 string userPoint = Console.ReadLine();
 
                 string[] points = userPoint.Split(" ");
